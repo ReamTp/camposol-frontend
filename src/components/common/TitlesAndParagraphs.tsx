@@ -1,15 +1,12 @@
 import styled from "styled-components";
-import { MediaQuerys } from "../../consts";
-
-interface Props {
-    color?: string
-}
+import { MediaQuerys } from "@config";
+import { TitleProps } from "@typesProject/components";
 
 export const Title = styled.h1`
     font-weight: bold;
     font-size: 2.5rem;
     margin-bottom: 2.1875rem;
-    color: ${(props: Props) => props.color ? props.color : "#000"};
+    color: ${(props: TitleProps) => props.color ? props.color : "#000"};
     
     ${MediaQuerys.Pixel2}{
         font-size: 2rem;

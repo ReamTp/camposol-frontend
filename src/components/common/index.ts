@@ -1,5 +1,9 @@
 // Containers
-export { Container } from './Container';
+export { Container } from './Containers';
+
+// Nav
+export { Nav } from './Nav';
+export { LogoNav } from './LogoNav';
 
 // Buttons
 export { Button } from './Buttons';

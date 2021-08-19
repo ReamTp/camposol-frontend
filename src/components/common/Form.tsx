@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MediaQuerys } from "../../consts";
+import { MediaQuerys } from "@config";
 
 export const Form = styled.form`
     display: block;

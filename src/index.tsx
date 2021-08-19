@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
-import { GlobalStyle } from './components/GlobalStyles';
-import AppRouter from "./components/router";
+import { GlobalStyle } from './themes/GlobalStyles';
+import AppRouter from "./router";
 
 ReactDOM.render(
     <>

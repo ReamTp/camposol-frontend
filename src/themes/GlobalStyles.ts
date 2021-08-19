@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Animations } from "./Animations";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -21,4 +22,16 @@ export const GlobalStyle = createGlobalStyle`
         box-shadow: 0 1px 1px rgba(38, 161, 66, 0.075)inset, 0 0 8px rgba(51, 212, 87, 0.6);
         outline: 0 none;
     }
+
+    a {
+        color: #3F9047;
+        text-decoration: none;
+    }
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    ${Animations}
 `;

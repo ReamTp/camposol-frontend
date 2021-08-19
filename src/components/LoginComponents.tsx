@@ -1,6 +1,10 @@
 import styled from 'styled-components';
-import { MediaQuerys } from '../consts';
-import { Button, Column, Image, Row } from './common';
+import { MediaQuerys } from '@config';
+import { Button, Column, Container, Image, Row } from '@commonComp';
+
+export const ContentLogin = styled(Container)`
+    display: block;
+`;
 
 export const RowLogin = styled(Row)`
     ${MediaQuerys.iPad}{

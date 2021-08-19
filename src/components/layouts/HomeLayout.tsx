@@ -1,12 +1,8 @@
-import React from 'react'
-import { Column, Row } from '../common'
+import React from 'react';
+import { Column, Row } from '@commonComp';
+import { HomeLayoutProps } from '@typesProject/components';
 
-type Props = {
-    title: string,
-    children: React.ReactNode
-}
-
-export function HomeLayout(props: Props) {
+export function HomeLayout(props: HomeLayoutProps) {
     return (
         <Row>
             <Column>

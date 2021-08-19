@@ -1,17 +1,11 @@
-import React from 'react'
-import { Container, Title } from '../common'
-import LoginComponent, { BackgroundImg, ContentRigthComponent, Fondo, Logo, RigthLoginComponent, RowLogin } from '../LoginComponents'
+import React from 'react';
+import { LoginLayoutProps } from '@typesProject/components';
+import { Title } from '@commonComp';
+import LoginComponent, { BackgroundImg, ContentLogin, ContentRigthComponent, Fondo, Logo, RigthLoginComponent, RowLogin } from '../LoginComponents'
 
-type Props = {
-    title: string,
-    backgroundImg: string,
-    logo: string,
-    children?: React.ReactNode
-}
-
-export function LoginLayout(props: Props) {
+export function LoginLayout(props: LoginLayoutProps) {
     return (
-        <Container>
+        <ContentLogin>
             <RowLogin>
                 <LoginComponent>
                     <BackgroundImg src={props.backgroundImg} alt="Fondo" />
@@ -26,6 +20,6 @@ export function LoginLayout(props: Props) {
                     </ContentRigthComponent>
                 </RigthLoginComponent>
             </RowLogin>
-        </Container>
+        </ContentLogin>
     )
 }
